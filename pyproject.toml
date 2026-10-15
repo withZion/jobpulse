@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jobpulse"
+version = "0.1.0"
+description = "Heartbeat, dead-man's switch and Telegram alerts for unattended Python jobs. Standard library only."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Zion O'JUWONLO" }]
+keywords = ["cron", "heartbeat", "monitoring", "telegram", "healthchecks"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: System :: Monitoring",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+include = ["jobpulse*"]
